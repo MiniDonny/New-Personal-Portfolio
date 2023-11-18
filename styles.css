@@ -51,7 +51,10 @@ body{
 .header.sticky{
     background-color: var(--second-background-color);
 }
-
+.header.sticky,
+.header.active {
+    background-color: var(--second-background-color);
+}
 .logo{
     position: relative;
     font-size: 2.5rem;
