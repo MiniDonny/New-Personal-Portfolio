@@ -17,6 +17,7 @@
 html{
     font-size: 62.5%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -224,52 +225,6 @@ section{
 .btn-box .btn:hover::before{
     width: 100%;
 }
-
-.home-sci{
-    position: absolute;
-    bottom: 4rem;
-    width: 170px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.home-sci a{
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: .2rem solid var(--third-background-color);
-    border-radius: 50%;
-    font-size: 20px;
-    color: var(--text-color);
-    z-index: 1;
-    overflow: hidden;
-    transition: .5s;
-}
-
-.home-sci a:hover{
-    color: var(--third-background-color);
-}
-
-.home-sci a::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: var(--text-color);
-    z-index: -1;
-    transition: .5s;
-}
-
-.home-sci a:hover::before{
-    width: 100%;
-}
-
 /*ABOUT SECTION DESING*/
 .about{
     display: flex;
@@ -529,22 +484,22 @@ span{
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
-    width: 80%;
+    width: 55%;
 }
 .skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span{
-    width: 56%;
+    width: 45%;
 }
 .skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span{
-    width: 25%;
+    width: 15%;
 }
 .skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span{
     width: 10%;
 }
 .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span{
-    width: 0%;
+    width: 40%;
 }
 .skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span{
-    width: 0%;
+    width: 20%;
 }
 .skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span{
     width: 0%;
@@ -692,7 +647,7 @@ span{
     color: var(--main-color);
 }
 
-/*ANIMATION RELOAD AND SCROLL*/
+/*ANIMATION RELOAD AND SCROLL
 .animate{
     position: absolute;
     top: 0;
@@ -733,7 +688,7 @@ section:nth-child(odd) .animate.scroll,
 .footer.show-animate .animate.scroll{
     transition-delay: calc(.3s * var(--i));
     width: 0;
-}
+}*/
 
 /*MEADIQ QUERYS*/
 @media (max-width: 1200px){

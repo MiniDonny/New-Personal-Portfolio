@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     footer();
     animacionGsap();
 });
+
 /*TOGGLE ICON NAVBAR*/
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
@@ -55,7 +56,7 @@ let animationScroll = window.onscroll = () => {
     footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
 }
 
-// Configura las animaciones con GSAP
+/* Configura las animaciones con GSAP
 gsap.registerPlugin(ScrollTrigger);
 
 let animacionGsap = gsap.to('.show-animate', {
@@ -67,4 +68,22 @@ let animacionGsap = gsap.to('.show-animate', {
         scrub: true, // Hace que la animación sea suave al hacer scroll
         markers: false // Marcadores para depuración (puedes quitar esto en producción)
     }
-});
+});*/
+
+
+/*A PARTIR DE ACA NO FUNCIONA*/
+
+/* Configura las animaciones con GSAP*/
+
+/*gsap.registerPlugin(ScrollTrigger);
+
+let animacionGsap = () => gsap.to('.show-animate', {
+    ease: 'power4.inOut',
+    scrollTrigger: {
+        trigger: '.show-animate',
+        start: 'top 10%', // Inicia la animación cuando el 10% del elemento es visible
+        end: 'bottom 80%', // Termina la animación cuando el 80% del elemento no es visible
+        scrub: true, // Hace que la animación sea suave al hacer scroll
+        markers: false // Marcadores para depuración (puedes quitar esto en producción)
+    }
+});*/
