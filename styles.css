@@ -139,10 +139,11 @@ section{
     background-position: 0 0;
 }
 
-.home.show-animate .home-content .text-animate h3{
+.home .home-content .text-animate h3 {
     animation: homeBgText 6s linear infinite;
     animation-delay: 2s;
 }
+
 
 .home-content .text-animate h3::before{
     content: '';
@@ -155,7 +156,7 @@ section{
     z-index: -1;
 }
 
-.home.show-animate .home-content .text-animate h3::before{
+.home .home-content .text-animate h3::before {
     animation: homeCursorText 6s linear infinite;
     animation-delay: 2s;
 }
@@ -210,12 +211,12 @@ section{
     background: var(--main-color);
 }
 
-.btn-box .btn::before{
+.btn-box .btn::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 0%;
+    width: 0; /* Ajusta el ancho según sea necesario */
     height: 100%;
     background: var(--background-color);
     z-index: -1;
@@ -598,98 +599,47 @@ span{
     padding: 2rem 9%;
     background: transparent;
 }
-
-.footer-text,
-.footer-iconTop{
-    position: relative;
+.footer-networks{
+    display: flex;
+    justify-content: space-between;
 }
-
-.footer-text p{
-    font-size: 1.6rem;
-}
-
-.footer-iconTop a{
+.footer-networks a{
     position: relative;
     display: inline-flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    padding: .8rem;
-    background: var(--main-color);
+    width: 40px;
+    height: 40px;
+    background: transparent;
     border: .2rem solid var(--main-color);
-    border-radius: .6rem;
+    border-radius: 25%;
+    font-size: 20px;
+    color: var(--text-color);
     z-index: 1;
     overflow: hidden;
+    transition: .5s;
 }
-
-.footer-iconTop a::before{
+.footer-networks a:hover{
+    color: var(--third-background-color);
+}
+.footer-networks a::before{
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--second-background-color);
     z-index: -1;
     transition: .5s;
+    background: var(--text-color);
 }
-
-.footer-iconTop a:hover::before{
+.footer-networks a:hover::before{
     width: 100%;
 }
-
-.footer-iconTop a i{
-    font-size: 2.4rem;
-    color: var(--background-color);
-    transition: .5s;
+.footer-text p{
+    font-size: 1.6rem;
+    color: var(--text-color);
 }
-
-.footer-iconTop a:hover i{
-    color: var(--main-color);
-}
-
-/*ANIMATION RELOAD AND SCROLL
-.animate{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--third-background-color);
-    z-index: 98;
-}
-
-.logo .animate,
-.navbar .animate,
-#menu-icon .animate,
-.home.show-animate .animate{
-    animation: showRight 1s ease forwards;
-    animation-delay: calc(.3s * var(--i));
-}
-
-.animate.scroll{
-    transition: 1s ease;
-    transition-delay: calc(.3s / var(--i));
-    animation: none;
-}
-
-section:nth-child(odd) .animate.scroll,
-.footer .text-animate{
-    background: var(--third-background-color);
-}
-
-.education .education-box .animate.scroll{
-    width: 105%;
-}
-
-.about.show-animate .animate.scroll,
-.education.show-animate .animate.scroll,
-.skills.show-animate .animate.scroll,
-.contact.show-animate .animate.scroll,
-.footer.show-animate .animate.scroll{
-    transition-delay: calc(.3s * var(--i));
-    width: 0;
-}*/
-
 /*MEADIQ QUERYS*/
 @media (max-width: 1200px){
     html{
@@ -773,6 +723,10 @@ section:nth-child(odd) .animate.scroll,
         transform: translateX(0);
         transition-delay: .25s;
     }
+    .footer{
+        flex-direction: column-reverse;
+        gap: 2.5rem;
+    }
 }
 
 @media (max-width: 520px){
@@ -785,13 +739,9 @@ section:nth-child(odd) .animate.scroll,
         flex-direction: column;
     }
 
-    .home-sci{
-        width: 160px;
-    }
-
-    .home-sci a{
-        width: 38px;
-        height: 38px;
+    .footer{
+        flex-direction: column-reverse;
+        gap: 2.5rem;
     }
 }
 
@@ -837,27 +787,28 @@ section:nth-child(odd) .animate.scroll,
 }
 
 /*KEYFRAMES ANIMATIOS*/
-@keyframes homeBgText{
-    0%,10%,100%{
+@keyframes homeBgText {
+    0%, 10%, 100% {
         background-position: -33rem 0;
     }
-    65%,85%{
+    65%, 85% {
         background-position: 0 0;
     }
 }
 
-@keyframes homeCursorText{
-    0%,10%,100%{
+@keyframes homeCursorText {
+    0%, 10%, 100% {
         width: 0;
     }
-    65%,78%,85%{
+    65%, 78%, 85% {
         width: 100%;
         opacity: 1;
     }
-    75%,81%{
+    75%, 81% {
         opacity: 0;
     }
 }
+
 
 @keyframes aboutSpinner{
     100%{
