@@ -1,23 +1,24 @@
 # My New Personal Portfolio
-![readmeImg](https://github.com/MiniDonny/New-Personal-Portfolio/assets/129457178/29d29c96-3a93-4a09-8a17-8e9ae7964a1f)
+![readmePortfolio](https://github.com/MiniDonny/New-Personal-Portfolio/assets/129457178/ce842e2e-d9c2-4604-8cbc-fbfd70e33855)
 <hr>
 
 ## Here you can find my new updated portfolio and the code.
-<img scr="./Pictures/readmeImg.png">
+![readmeImg](https://github.com/MiniDonny/New-Personal-Portfolio/assets/129457178/29d29c96-3a93-4a09-8a17-8e9ae7964a1f)
 
 <hr>
 
 ## For icons use <a href="https://boxicons.com">Boxicons</a>
-<img scr="./Pictures/readmeImg2.png">
+![readmeImg2](https://github.com/MiniDonny/New-Personal-Portfolio/assets/129457178/667fd367-d74d-4122-a329-ab6b0a7d4893)
 
 <hr>
 
 ## To fix bugs and errors use <a href="https://chat.openai.com">ChatGPT</a>
-<img scr="./Pictures/readmeImg3.png">
+![readmeImg3](https://github.com/MiniDonny/New-Personal-Portfolio/assets/129457178/be84417d-d6db-4403-ba75-4dc491128d16)
 
 <hr>
 
 ## I was inspired by several <a href="https://www.youtube.com/?bp=wgUCEAE%3D">YouTube</a> videos
+<img href="https://www.youtube.com/img/desktop/yt_1200.png">
 ### Among them:
 * <a href="https://www.youtube.com/watch?v=XRSQHkzrQGQ">Syntax Studio</a>
 * <a href="https://www.youtube.com/watch?v=d2__JvWNFbQ&t=454s">Marcelozair</a>
