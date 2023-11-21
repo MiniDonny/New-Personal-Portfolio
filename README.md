@@ -18,7 +18,6 @@
 <hr>
 
 ## I was inspired by several <a href="https://www.youtube.com/?bp=wgUCEAE%3D">YouTube</a> videos
-<img href="https://www.youtube.com/img/desktop/yt_1200.png">
 ### Among them:
 * <a href="https://www.youtube.com/watch?v=XRSQHkzrQGQ">Syntax Studio</a>
 * <a href="https://www.youtube.com/watch?v=d2__JvWNFbQ&t=454s">Marcelozair</a>
