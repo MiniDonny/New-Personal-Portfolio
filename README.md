@@ -1,5 +1,5 @@
 # My New Personal Portfolio
-<img scr="./Pictures/readmePortfolio.jpg">
+![readmeImg](https://github.com/MiniDonny/New-Personal-Portfolio/assets/129457178/29d29c96-3a93-4a09-8a17-8e9ae7964a1f)
 <hr>
 
 ## Here you can find my new updated portfolio and the code.
